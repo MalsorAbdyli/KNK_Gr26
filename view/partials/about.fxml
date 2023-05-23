@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="350.0" prefHeight="184.0" prefWidth="451.0" spacing="15.0" stylesheets="@../../resources/styles/app.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controllers1.partials.AboutController">
+    <children>
+        <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="186.0" prefWidth="199.0" styleClass="about-card-img">
+            <children>
+                <ImageView fitHeight="112.0" fitWidth="183.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../resources/images/liga.jfif" />
+                    </image>
+                </ImageView>
+            </children>
+        </StackPane>
+        <VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="171.0" prefWidth="234.0" spacing="5.0" HBox.hgrow="ALWAYS">
+            <children>
+                <Label fx:id="appNameLabel" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="237.0" text="App for presenting basketball game results" />
+                <Label fx:id="versionLabel" text="Kosovo Basketball League" />
+                <Label fx:id="releasedLabel" text="Released: 24 May 2023" />
+            </children>
+        </VBox>
+    </children>
+</HBox>

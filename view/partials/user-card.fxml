@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="135.0" prefWidth="250.0" spacing="10.0" styleClass="user-card" stylesheets="@../../resources/styles/app.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controllers1.partials.UserCardController">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+    <children>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <Label fx:id="nameLabel" text="John Doe" />
+                        <Label fx:id="emailLabel" text="mail@example.com" />
+                        <Label fx:id="idLabel" text="Identifier: 33" />
+                        <CheckBox fx:id="isActiveCheckBox" mnemonicParsing="false" text="Active" />
+                    </children>
+                </VBox>
+                <StackPane HBox.hgrow="SOMETIMES">
+                    <children>
+                        <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../resources/images/user-icon.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </StackPane>
+            </children>
+        </HBox>
+        <GridPane hgap="10.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button fx:id="editButton" mnemonicParsing="false" prefWidth="120.0" styleClass="btn-green" text="Edit" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" />
+                <Button fx:id="deleteButton" mnemonicParsing="false" prefWidth="120.0" style="-fx-text-fill: white;" text="Delete" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" />
+            </children>
+        </GridPane>
+    </children>
+</VBox>
